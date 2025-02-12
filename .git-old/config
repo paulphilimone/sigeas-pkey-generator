@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[gui]
+	wmstate = normal
+	geometry = 887x427+750+305 555 401
+[remote "origin"]
+	url = https://github.com/paulphilimone/sigeas-pkey-generator.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
