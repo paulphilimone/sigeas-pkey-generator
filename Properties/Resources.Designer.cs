@@ -59,5 +59,15 @@ namespace mz.betainteractive.sigeas.bpkgenerator.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Philimone_s_Group_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Philimone\'s Group Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

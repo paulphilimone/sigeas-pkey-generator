@@ -148,7 +148,7 @@ namespace mz.betainteractive.sigeas.bpkgenerator.Views {
             string pkey = txtMKey.Text;                       
             //F7_2011-01-10_10-9-9.btskey
 
-            string dt = DateTime.Now.ToString();
+            string dt = DateTime.Now.ToString("O");
             dt = dt.Replace(" ", "_").Replace(":", "-");
 
             string file = ProductName + "_" + dt +".btskey";
@@ -197,6 +197,10 @@ namespace mz.betainteractive.sigeas.bpkgenerator.Views {
 
                 br.Close();
             }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e) {
+
         }
     }
 

@@ -23,7 +23,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGenerateKey));
             this.gBCommunication = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelConState = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@
             this.txtEncrypted = new System.Windows.Forms.TextBox();
             this.FormSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.FormOpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gBCommunication.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,6 +70,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gBCommunication
@@ -428,8 +429,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txtEncrypted);
             this.groupBox2.Location = new System.Drawing.Point(310, 7);
@@ -437,6 +438,7 @@
             this.groupBox2.Size = new System.Drawing.Size(409, 101);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label3
             // 
@@ -466,6 +468,16 @@
             this.FormOpenFile.DefaultExt = "btskey";
             this.FormOpenFile.Filter = "Sisga Keys (*.btskey)|";
             this.FormOpenFile.Title = "Abrir Ficheiro";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::mz.betainteractive.sigeas.bpkgenerator.Properties.Resources.Philimone_s_Group_Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(101, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(201, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmGenerateKey
             // 
@@ -498,6 +510,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,6 +554,7 @@
         private System.Windows.Forms.MaskedTextBox txtMKey;
         private System.Windows.Forms.OpenFileDialog FormOpenFile;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
